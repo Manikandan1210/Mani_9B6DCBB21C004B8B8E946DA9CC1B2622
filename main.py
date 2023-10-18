@@ -1,10 +1,14 @@
-# 1.1 Implement a recursive to calculate the factorial of a given number
-def factorial(n):
+class Player:
+    def play(self):
+        print("The player is playing cricket.")
+class Batsman( Player):
+    def play(self):
+        print("The batsman is batting.")
+class Bowler(Player):
+    def play(self):
+        print("The Bowler is bowlinng.")
 
-  # single line to find factorial
-  return 1 if (n == 1 or n == 0) else n * factorial(n - 1)
-
-
-# Driver Code
-num = 5
-print("Factorial of", num, "is", factorial(num))
+Batsman = Batsman()
+Bowler = Bowler()
+Batsman.play()
+Bowler.play()
